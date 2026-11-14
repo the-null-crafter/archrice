@@ -1,20 +1,20 @@
 [settings.npm]
 package_manager = "aube"
+shell_out = false
 
 
 [tools]
 aube = "latest"
 bun = "latest"
-
 "npm:husky" = "latest"
 "npm:opencode-ai" =  {version="latest", allow_builds = true}
-
 "pipx:yt-dlp" = "latest"
-"npm:@vercel/vc-native" = "latest"
 pnpm = "latest"
 uv = "latest"
-rust = { version = "latest", components = "rust-src,rust-analyzer" }
-# rust = "nightly"
+rust = { 
+    version = "latest", # or nightly
+    components = "rust-src,rust-analyzer" 
+}
 "cargo:cargo-binstall" = "latest"
 "cargo:create-tauri-app" = "latest"
 "cargo:tauri-cli" = "2"
@@ -24,7 +24,6 @@ usage = "latest"
 "npm:@opencode-ai/cli" = {version = "next", allow_builds=true}
 "cargo:dysk" = "latest"
 "npm:wrangler" = "latest"
-ollama = "0.32.13"
 "cargo:eza" = "latest"
 gofumpt = "latest"
 stylua = "latest"
@@ -43,4 +42,4 @@ claude-code = "latest"
 "pipx:rassumfrassum" = "latest"
 pandoc = "latest"
 typst = "latest"
-
+java = "lts"
